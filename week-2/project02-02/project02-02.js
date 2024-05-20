@@ -9,13 +9,9 @@
       Filename: project02-02.js
  */
 function verifyForm() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  if (name && email && phone) {
-    window.alert("Thank you!");
-} else {
-    window.alert("Please fill in all fields");
-}
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  (name && email && phone) ? window.alert("Thank you!") : window.alert("Please fill in all fields");
 }
 document.getElementById("submit").addEventListener("click", verifyForm);
